@@ -1,0 +1,20 @@
+<nav>
+    <div class="navbar-content">
+        <img src="logo.svg" alt="logo" class="logo">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Careers</li>
+        </ul>
+        <button>Request Invite</button>
+        <div class="mobile-menu">
+            @if (!open) {
+                <img src="icon-hamburger.svg" alt="menu" class="hamburger" (click)="openMenu(open)">
+            } @else {
+                <img src="icon-close.svg" alt="close" (click)="openMenu(open)">
+            }
+        </div>
+    </div>
+</nav>

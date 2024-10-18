@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+nav {
+    width: 100%;
+    background-color: $white;
+}
+
+.navbar-content {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    ul {
+        width: 330px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        li {
+            text-decoration: none;
+            list-style-type: none;
+            color: $gray;
+            font-size: 14px;
+            font-family: PublicSans;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                color: black;
+                border-bottom-color: $primary;
+                border-bottom-style: solid;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-content {
+        padding: 0 20px 0 20px;
+        ul {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+/************/
+/*  colors  */
+/************/
+$primary: #30C88F;
+$text: #2D314D;
+$gray: #9597A5;
+$gradient: linear-gradient(140deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
+$white: #FFF;
+
+/***********/
+/*  Fonts  */
+/***********/
+
+@font-face {
+    font-family: "PublicSans";
+    src: url("../public/PublicSans-VariableFont_wght.ttf");
+}
+
+/***********/
+/*  Sizes  */
+/***********/
+
+$large: 1441px;
+$regular: 1440px;
+$tablet: 800px;
