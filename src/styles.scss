@@ -28,3 +28,7 @@ button:hover {
     cursor: pointer;
     opacity: 0.5;
 }
+
+body, html {
+    overflow-x: hidden;
+}
