@@ -7,13 +7,13 @@ nav {
 }
 
 .navbar-content {
-    height: 80px;
+    height: px-to-rem(80px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px 0 150px;
+    padding: 0 px-to-rem(150px) 0 px-to-rem(150px);
     ul {
-        width: 330px;
+        width: px-to-rem(330px);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -23,9 +23,9 @@ nav {
             text-decoration: none;
             list-style-type: none;
             color: $gray;
-            font-size: 14px;
+            font-size: px-to-rem(14px);
             font-family: PublicSans;
-            height: 80px;
+            height: px-to-rem(80px);
             display: flex;
             align-items: center;
             &:hover {
@@ -38,15 +38,15 @@ nav {
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: px-to-rem(481px)) {
     .mobile-menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: px-to-rem(480px)) {
     .navbar-content {
-        padding: 0 20px 0 20px;
+        padding: 0 px-to-rem(20px) 0 px-to-rem(20px);
         ul {
             display: none;
         }
@@ -56,3 +56,9 @@ nav {
     }
 }
 
+@media screen and (min-width: px-to-rem(1441px)) {
+    .navbar-content {
+        width: px-to-rem(1440px);
+        margin: auto;
+    }
+}

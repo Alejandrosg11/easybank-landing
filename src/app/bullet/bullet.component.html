@@ -1,0 +1,9 @@
+<div class="bullet">
+    @for (item of bullets; track item.title) {
+        <div class="bullet__content">
+            <img src="{{ item.img }}" alt="bullet">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.body }}</p>
+        </div>
+    }
+</div>

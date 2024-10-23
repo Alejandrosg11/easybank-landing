@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.bullet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bullet__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: px-to-rem(30px);
+    img {
+        width: px-to-rem(62px);
+        height: px-to-rem(62px);
+    }
+}

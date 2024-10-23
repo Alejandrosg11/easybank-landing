@@ -6,20 +6,27 @@ body {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: px-to-rem(56px);
+}
+
+p {
+    color: $gray;
+    font-size: px-to-rem(16px);
+    line-height: 1.5;
+    font-family: "PublicSans";
 }
 
 button {
     all: unset;
-    width: 163px;
-    height: 44px;
+    width: px-to-rem(163px);
+    height: px-to-rem(44px);
     background: $gradient;
-    border-radius: 22px;
+    border-radius: px-to-rem(22px);
     color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: px-to-rem(14px);
     font-weight: bold;
     font-family: PublicSans;
 }
