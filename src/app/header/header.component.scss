@@ -8,20 +8,21 @@
     }
     .mockups {
         width: 100%;
-        margin-top: px-to-rem(-100px);
     }
     .background-image {
         position: relative;
-        width: 180%;
-        top: px-to-rem(-160px); // Ajusta para mover la imagen hacia arriba
-        left: px-to-rem(-100px);
+        width: 200%;
+        top: -19.0rem; // Ajusta para mover la imagen hacia arriba
+        left:-6.3rem;
+        z-index: -2;
     }
     .mockups {
         position: relative;
-        top: px-to-rem(-100px); // Ajusta según sea necesario
+        top: -52.3rem; // Ajusta según sea necesario
+        z-index: -1;
     }
     .bg-mockups {
-        height: px-to-rem(300px);
+        height: 19.8rem;
     }
 
     .header__content {
@@ -31,14 +32,39 @@
         align-items: center;
         width: 80%;
         h1 {
-            font-size: px-to-rem(36px);
-            text-align: center;
+            font-size: px-to-rem(40px);
             margin-bottom: px-to-rem(10px);
+            text-align: center;
         }
         p {
             text-align: center;
             margin-bottom: px-to-rem(30px);
+            text-align: center;
         }
+    }
+    .section-2 {
+        margin-bottom: px-to-rem(80px);
+        display: flex;
+        justify-content: center;
+        background-color: #F4F5F7;
+        margin-top: px-to-rem(100px);
+        padding-top: px-to-rem(60px);
+    }
+    .why-easybank:nth-child(1) {
+        width: 85%;
+    }
+    .section-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: px-to-rem(80px);
+    }
+    h2 {
+        text-align: center;
+        font-size: px-to-rem(36px);
+    }
+    p {
+        text-align: center;
     }
 }
 
@@ -63,12 +89,7 @@
         align-items: center;
         padding-bottom: px-to-rem(200px);
         h1 {
-            font-size: px-to-rem(56px);
-            font-family: "PublicSans";
-            font-weight: 400;
             text-align: left;
-            color: $text;
-            letter-spacing: px-to-rem(1px);
             margin-bottom: px-to-rem(10px);
             width: px-to-rem(447px);
         }
@@ -114,6 +135,15 @@
         display: flex;
         align-items: center;
         margin-top: px-to-rem(-90px);
+        z-index: 4;
+    }
+    .section-3 {
+        background-color: #fcfcfc;
+        height: px-to-rem(676px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
     }
 }
 
@@ -140,5 +170,15 @@
         top: px-to-rem(-80px); // Ajusta según sea necesario
         right: px-to-rem(-120px); // Ajusta para mover la imagen correctamente
         width: px-to-rem(732px);
+    }
+    .section-2 {
+        background-color: #F4F5F7;
+        height: px-to-rem(676px);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .why-easybank {
+        width: px-to-rem(1240px);
     }
 }

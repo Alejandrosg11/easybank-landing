@@ -2,7 +2,7 @@
 
 .bullet {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -15,5 +15,21 @@
     img {
         width: px-to-rem(62px);
         height: px-to-rem(62px);
+    }
+}
+
+@media screen and (max-width: px-to-rem(480px)) {
+    .bullet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .bullet__content {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

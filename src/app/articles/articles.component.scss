@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: px-to-rem(1110px);
+}
+
+.article-card {
+    width: px-to-rem(255px);
+    height: px-to-rem(395px);
+    background-color: white;
+    border-radius: px-to-rem(10px);
+    img {
+        width: px-to-rem(255px);
+        height: px-to-rem(200px);
+        border-radius: px-to-rem(10px) px-to-rem(10px) 0 0 ;
+    }
+    p {
+        padding: 0 20px 0 20px;
+    }
+    h3, h4 {
+        padding: 0 20px 0 20px;
+        margin: 10px 0 10px 0;
+    }
+    h3:hover {
+        color: $primary;
+        cursor: pointer;
+    }
+    .author {
+        font-size: px-to-rem(12px);
+    }
+    article {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: px-to-rem(480px)) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .article-card {
+            margin: px-to-rem(30px);
+        }
+    }
+}

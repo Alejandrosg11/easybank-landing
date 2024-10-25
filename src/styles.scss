@@ -5,37 +5,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: px-to-rem(56px);
-}
-
-p {
-    color: $gray;
-    font-size: px-to-rem(16px);
-    line-height: 1.5;
-    font-family: "PublicSans";
-}
-
-button {
-    all: unset;
-    width: px-to-rem(163px);
-    height: px-to-rem(44px);
-    background: $gradient;
-    border-radius: px-to-rem(22px);
-    color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: px-to-rem(14px);
-    font-weight: bold;
-    font-family: PublicSans;
-}
-
-button:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
-
 body, html {
     overflow-x: hidden;
 }
