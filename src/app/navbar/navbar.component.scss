@@ -36,13 +36,13 @@ nav {
     }
 }
 
-@media screen and (min-width: px-to-rem(481px)) {
+@media screen and (min-width: px-to-rem(650px)) {
     .mobile-menu {
         display: none;
     }
 }
 
-@media screen and (max-width: px-to-rem(480px)) {
+@media screen and (max-width: px-to-rem(650px)) {
     nav {
         position: fixed;
     }
@@ -54,5 +54,11 @@ nav {
         button {
             display: none;
         }
+    }
+}
+
+@media screen and (min-width: px-to-rem(482px)) and (max-width: px-to-rem(1200px)) {
+    .navbar-content {
+        padding: 0 2rem 0 2rem;
     }
 }

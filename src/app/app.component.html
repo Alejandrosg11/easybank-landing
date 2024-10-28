@@ -1,3 +1,6 @@
-<app-navbar></app-navbar>
+<app-navbar (isOpen)="showMenu($event)"></app-navbar>
+@if(open) {
+    <app-mobile-menu></app-mobile-menu>
+}
 <app-header style="position:relative;"></app-header>
 <app-footer></app-footer>

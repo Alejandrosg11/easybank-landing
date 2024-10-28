@@ -9,11 +9,11 @@
             <li>Careers</li>
         </ul>
         <button>Request Invite</button>
-        <div class="mobile-menu">
+        <div class="mobile-menu" (click)="openMenu(open)">
             @if (!open) {
-                <img src="icon-hamburger.svg" alt="menu" class="hamburger" (click)="openMenu(open)">
+                <img src="icon-hamburger.svg" alt="menu" class="hamburger">
             } @else {
-                <img src="icon-close.svg" alt="close" (click)="openMenu(open)">
+                <img src="icon-close.svg" alt="close">
             }
         </div>
     </div>

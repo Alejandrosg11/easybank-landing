@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-@media screen and (max-width: px-to-rem(480px)) {
+@media screen and (max-width: px-to-rem(650px)) {
     .header {
         display: flex;
         flex-direction: column-reverse;
@@ -72,7 +72,7 @@
 }
 
 
-@media screen and (min-width: px-to-rem(481px)) {
+@media screen and (min-width: px-to-rem(651px)) {
     body {
         overflow-x: hidden; // Evitar scroll horizontal
     }
@@ -150,6 +150,81 @@
     }
 }
 
+@media screen and (min-width: px-to-rem(650px)) and (max-width: px-to-rem(950px)) {
+    .mockups {
+        width: 100%;
+    }
+    .background-image {
+        position: relative;
+        width: 52rem;
+        top: -10rem;
+        left: -2.3rem;
+        z-index: -2;
+    }
+    .mockups {
+        position: relative;
+        width: 34rem;
+        top: -53rem;
+        z-index: -1;
+        margin: 0 auto;
+        left: 4.8rem;
+    }
+    .bg-mockups {
+        height: 35.8rem;
+        width: 55.8rem;
+    }
+    .header__content {
+        flex: 1; // Permitir que ocupe más espacio
+        padding: px-to-rem(20px); // Espacio para respirar
+        width: px-to-rem(285px);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: px-to-rem(200px);
+        h1 {
+            text-align: center;
+            margin-bottom: px-to-rem(10px);
+            width: 17rem;
+            font-size: 2.0rem;
+        }
+        p {
+            text-align: center;
+            margin-bottom: px-to-rem(30px);
+            width: 17rem;
+        }
+        button {
+            width: px-to-rem(163px);
+        }
+    }
+}
+
+@media screen and (min-width: px-to-rem(951px)) and (max-width: px-to-rem(1240px)) {
+    .mockups {
+        width: 100%;
+    }
+    .background-image {
+        position: relative;
+        width: 52rem;
+        top: -10rem;
+        left: -2.3rem;
+        z-index: -2;
+    }
+    .mockups {
+        position: relative;
+        width: 34rem;
+        top: -53rem;
+        z-index: -1;
+        margin: 0 auto;
+        left: 0.8rem;
+    }
+    .bg-mockups {
+        height: 35.8rem;
+        width: 29.8rem;
+    }
+}
+
 @media screen and (min-width: px-to-rem(1441px)) {
     .header {
         width: px-to-rem(1440px);
@@ -183,5 +258,12 @@
     }
     .why-easybank {
         width: px-to-rem(1240px);
+    }
+}
+
+@media screen and (min-width: px-to-rem(481px)) and (max-width: px-to-rem(1220px)) {
+    .section-3 {
+        height: 100%;
+        width: 100%;
     }
 }
