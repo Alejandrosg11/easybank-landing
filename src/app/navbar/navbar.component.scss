@@ -43,6 +43,9 @@ nav {
 }
 
 @media screen and (max-width: px-to-rem(480px)) {
+    nav {
+        position: fixed;
+    }
     .navbar-content {
         padding: 0 px-to-rem(20px) 0 px-to-rem(20px);
         ul {

@@ -11,18 +11,21 @@
     }
     .background-image {
         position: relative;
-        width: 200%;
-        top: -19.0rem; // Ajusta para mover la imagen hacia arriba
-        left:-6.3rem;
+        width: 52rem;
+        top: -14rem;
+        left: 6.7rem;
         z-index: -2;
     }
     .mockups {
         position: relative;
-        top: -52.3rem; // Ajusta según sea necesario
+        width: 47%;
+        top: -46rem;
         z-index: -1;
+        margin: 0 auto;
+        left: 13.8rem;
     }
     .bg-mockups {
-        height: 19.8rem;
+        height: 25.8rem;
     }
 
     .header__content {
