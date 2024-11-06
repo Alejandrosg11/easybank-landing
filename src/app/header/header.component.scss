@@ -236,6 +236,7 @@
         overflow: hidden; // Asegura que cualquier desbordamiento se maneje correctamente
         flex: 0 0 50%; // Reducir el espacio que ocupa el contenedor de imágenes
         height: px-to-rem(790px); // Ajustar según sea necesario
+        mask-image: linear-gradient(to right, black 80%, transparent 97%);
     }
 
     .background-image {
@@ -264,6 +265,32 @@
 @media screen and (min-width: px-to-rem(481px)) and (max-width: px-to-rem(1220px)) {
     .section-3 {
         height: 100%;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .articles{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        h2 {
+            padding: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: px-to-rem(481px)) and (max-width: px-to-rem(1220px)) {
+    .why-easybank {
+        padding-top: 3rem;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-2 {
+        height: 100%;
     }
 }

@@ -19,6 +19,5 @@ export class AppComponent {
 
   showMenu(event: any) {
     this.open = event;
-    console.log(event);
   }
 }

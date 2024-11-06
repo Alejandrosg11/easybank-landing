@@ -33,3 +33,19 @@
         }
     }
 }
+
+@media screen and (min-width: px-to-rem(481px)) and (max-width: px-to-rem(1220px)) {
+    .bullet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .bullet__content {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
